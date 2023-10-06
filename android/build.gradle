@@ -65,11 +65,6 @@ dependencies {
 
     // tslocationmanager requires a particular build based upon play-services-location version.
     def locationMajorVersion = playServicesLocationVersion.split('\\.')[0] as int
-    if (locationMajorVersion >= 21) {
-        api(group: 'com.transistorsoft', name:'tslocationmanager-v21', version: '+')
-    } else {
-        api(group: 'com.transistorsoft', name:'tslocationmanager', version: '+')
-    }
 
     // EventBus
     implementation 'org.greenrobot:eventbus:3.3.1'

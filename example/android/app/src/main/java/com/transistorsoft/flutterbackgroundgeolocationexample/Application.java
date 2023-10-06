@@ -3,11 +3,6 @@ package com.transistorsoft.flutterbackgroundgeolocationexample;
 import android.os.StrictMode;
 import android.util.Log;
 
-import com.transistorsoft.locationmanager.adapter.BackgroundGeolocation;
-import com.transistorsoft.locationmanager.adapter.TSConfig;
-import com.transistorsoft.locationmanager.adapter.callback.TSBeforeInsertBlock;
-import com.transistorsoft.locationmanager.location.TSLocation;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -22,18 +17,18 @@ public class Application  extends FlutterApplication {
         // NOTE:  This is NOT required for background_geolocation
         //
 
-        StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder()
-                .detectDiskReads()
-                .detectDiskWrites()
-                .detectAll()
-                .penaltyLog()
-                .build());
-        StrictMode.setVmPolicy(new StrictMode.VmPolicy.Builder()
-                .detectLeakedSqlLiteObjects()
-                .detectLeakedClosableObjects()
-                .penaltyLog()
-                //.penaltyDeath()
-                .build());
+//        StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder()
+//                .detectDiskReads()
+//                .detectDiskWrites()
+//                .detectAll()
+//                .penaltyLog()
+//                .build());
+//        StrictMode.setVmPolicy(new StrictMode.VmPolicy.Builder()
+//                .detectLeakedSqlLiteObjects()
+//                .detectLeakedClosableObjects()
+//                .penaltyLog()
+//                //.penaltyDeath()
+//                .build());
 
         super.onCreate();
 
